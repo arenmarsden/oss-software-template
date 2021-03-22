@@ -1,4 +1,5 @@
 import org.ajoberstar.grgit.Grgit
+import org.cadixdev.gradle.licenser.LicenseExtension
 
 plugins {
   id("org.cadixdev.licenser") version "0.5.0" apply false
@@ -30,6 +31,14 @@ subprojects {
   configure<CheckstyleExtension> {
     configFile = rootProject.file(".checkstyle/checkstyle.xml")
     toolVersion = "8.41"
+  }
+
+  configure<LicenseExtension> {
+    include("**/*.java")
+    include("**/*.kts")
+
+    header = rootProject.file("HEADER.txt")
+    newLine = false
   }
 
   tasks.named<JavaCompile>("compileJava") {
