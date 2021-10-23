@@ -8,6 +8,4 @@ Remember to update the copyright notice with your name and the corresponding yea
 You are free to change the license as long as the original license is retained.
 
 ## License
-Copyright &copy; 2021 Aren Marsden
-
-Licensed under the Apache 2.0 License. See [LICENSE.txt](LICENSE.txt) for more information.
+Copyright (c) 2021 Aren Marsden
