@@ -6,6 +6,3 @@ Click on `Use Template` to use the template.
 
 Remember to update the copyright notice with your name and the corresponding year.
 You are free to change the license as long as the original license is retained.
-
-## License
-Copyright (c) 2021 Aren Marsden
