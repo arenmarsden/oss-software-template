@@ -3,7 +3,7 @@ import org.cadixdev.gradle.licenser.LicenseExtension
 
 plugins {
   id("org.cadixdev.licenser") version "0.6.1" apply false
-  id("org.ajoberstar.grgit") version "4.1.0" apply false
+  id("org.ajoberstar.grgit") version "5.0.0" apply false
   jacoco
 }
 
@@ -24,8 +24,8 @@ subprojects {
   }
 
   configure<JavaPluginExtension> {
-    sourceCompatibility = JavaVersion.VERSION_16
-    targetCompatibility = JavaVersion.VERSION_16
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
   }
 
   configure<CheckstyleExtension> {
