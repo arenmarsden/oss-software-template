@@ -9,7 +9,7 @@ plugins {
 
 allprojects {
   group = "com.arenmarsden"
-  version = "0.1"
+  version = "0.1-dev" // Update this to your release version
 }
 
 subprojects {
@@ -49,7 +49,7 @@ subprojects {
     )
   }
 
-  // Compile option: -DgitCommitHash
+  // Apply default commit hash to the end of the jar.
   if (!project.hasProperty("gitCommitHash")) {
     apply(plugin = "org.ajoberstar.grgit")
     ext["gitCommitHash"] = try {
